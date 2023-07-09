@@ -1,0 +1,43 @@
+#nameError{
+
+    font-size: 14px;
+    margin-right: 120px;
+    margin-top: -7px;
+    color: rgb(185, 80, 80) !important;
+}
+
+#emailError{
+    width: 100%;
+    font-size: 14px;
+    margin-top: -7px;
+    color: rgb(185, 80, 80) !important;
+    margin-left: -35%;
+}
+#passwordError{
+    
+    width: 150%;
+    font-size: 14px;
+    margin-right: 120px;
+    margin-top: -7px;
+    color: rgb(185, 80, 80) !important;
+    margin-left: -129px;
+}
+
+#EmailError{
+    font-size: 14px;
+    margin-right: 150px;
+    margin-top: -7px;
+    color: rgb(185, 80, 80) !important;
+    width: 100%;
+    margin-left: -14%;
+}
+
+#PasswordError{
+    
+    width: 150%;
+    font-size: 14px;
+    margin-right: 120px;
+    margin-top: -7px;
+    color: rgb(185, 80, 80) !important;
+    margin-left: -129px;
+}

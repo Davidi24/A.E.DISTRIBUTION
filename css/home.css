@@ -1,0 +1,149 @@
+h1{
+    color: white;
+    font-size: 1.7rem;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: bolder;
+    width: 80%;
+}
+
+.titlee{
+    width: 100%;
+    margin-top: 0%;
+    font-size: 430%;
+}
+
+
+.container{
+    margin-left: 7%;
+    position: relative;
+    bottom: 5%;
+    margin-top: 6%;
+    width: 80%;
+    height: 42vh;
+    display: flex;
+
+}
+
+.container h2{
+    text-transform: uppercase;
+    font-size: 1.55rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-left: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+.img1{
+    margin-left: 33%;
+    margin-top: 7%;
+    width: 35%;
+}
+
+.img2{
+    margin-left: 33%;
+    margin-top: 8%;
+    width: 33%;
+}
+
+.items{
+    width: 25%;
+  overflow: hidden;
+}
+
+.first{
+    background-color: rgba(219,84,90,0.97);
+    margin-right: 3%;
+    
+}
+.second{
+    background-color: rgba(241,197,14,0.94);
+    margin-right: 3%;
+}
+
+.third{
+    background-color:  rgba(71,138,201,0.94);
+    margin-right: 3%;
+}
+
+.four{
+    background-color: rgba(44,204,196,0.93);
+    margin-right: 3%;
+}
+
+
+body{
+    background-image: url("./back.jpg");
+    background-size: cover; 
+    height: 90vh;
+    
+}
+
+
+
+
+.logBot:hover{
+    background-color: #37c468;
+}
+.logBot{
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #15883e;
+    height: 48px;
+    width: 23%;
+}
+
+.LogIn{
+    margin-left: 43%;
+    margin-top: -2%;
+}
+
+
+
+
+#getStarted{
+    text-decoration: none;
+    color: white;
+}
+
+
+.par{
+    margin-left: 14%;
+    margin-right: 3%;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+
+.para{
+    margin-left: 18%;
+    margin-right: 3%;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+.line {
+    width: 66.5%;
+    height: 3px;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 19%;
+  }
+
+  .logo{
+    margin-bottom: 0%;
+  }
