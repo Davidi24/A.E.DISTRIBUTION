@@ -14,13 +14,12 @@
     transform: translate(-50%, -50%);
     box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, 0.4),
     3px 3px 5px 0px rgba(0, 0, 0, 0.35);
-    width: 45rem;
+    width: 55%;
     padding: 50px;
     opacity: 0;
     transition: 0.5s;
     z-index: -99;
     border: 0px solid black;
-    
 }
 
 #popup2.active2 {

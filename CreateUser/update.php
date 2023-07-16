@@ -2,9 +2,7 @@
 $msg = '';
 
 if (isset($_GET['id'])) {
-    // Check if the contact id exists, for example update.php?id=1 will get the contact with the id of 1
     if (!empty($_POST['id'])) {
-        // This part is similar to the create.php, but instead we update a record and not insert
         $client_id = $_POST["id"];
         $name = $_POST["name"];
         $email = $_POST["email"];
@@ -12,12 +10,8 @@ if (isset($_GET['id'])) {
         $company_name = $_POST["title"];
         $date = $_POST["created"];
 
-        // Validate client_id to accept alphanumeric characters
-
-        // Connect to the database
         $conn = require __DIR__ . '/../Database/database.php';
 
-        // Update the record
         $stmt = $conn->prepare('UPDATE klienti SET name = ?, email = ?, phone = ?, company_name = ?, date = ?, client_id = ? WHERE id = ?');
         $stmt->bind_param('ssssssi', $name, $email, $phone, $company_name, $date, $client_id, $_GET['id']);
         $stmt->execute();

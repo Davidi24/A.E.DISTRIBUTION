@@ -72,16 +72,16 @@
           echo "<button class='toggle-details' data-div-id='business-details-" . $businessRow["business_id"] . "'>Shiko detajet</button>";
           echo "</div>";
           echo "<div class='business-details' id='business-details-" . $businessRow["business_id"] . "' style='display: none;'>";
-          echo "<h2>Business Info:</h2>";
+          echo "<h2>Info e Biznesit:</h2>";
           echo "<ul>";
-          echo "<li><strong>Business ID:</strong> " . $businessRow["business_id"] . "</li>";
-          echo "<li><strong>Name:</strong> " . $businessRow["name"] . "</li>";
-          echo "<li><strong>Address:</strong> " . $businessRow["address"] . "</li>";
-          echo "<li><strong>Phone:</strong> " . $businessRow["phone"] . "</li>";
+          echo "<li><strong>Id e Biznesit:</strong> " . $businessRow["business_id"] . "</li>";
+          echo "<li><strong>Emri i Biznesit:</strong> " . $businessRow["name"] . "</li>";
+          echo "<li><strong>Adresa:</strong> " . $businessRow["address"] . "</li>";
+          echo "<li><strong>Numri i telefonit:</strong> " . $businessRow["phone"] . "</li>";
           echo "<li><strong>Email:</strong> " . $businessRow["email"] . "</li>";
           echo "<li><strong>Website:</strong> " . $businessRow["website"] . "</li>";
-          echo "<li><strong>Tax Number:</strong> " . $businessRow["tax_number"] . "</li>";
-          echo "<li><strong>Bank Account:</strong> " . $businessRow["bank_accaunt"] . "</li>";
+          echo "<li><strong>Numri i takses:</strong> " . $businessRow["tax_number"] . "</li>";
+          echo "<li><strong>Akuinti i bankes:</strong> " . $businessRow["bank_accaunt"] . "</li>";
           echo "</ul>";
 
           // Fetch the product_info rows with matching foreign key
@@ -91,11 +91,11 @@
           if ($productInfoResult->num_rows > 0) {
             echo "<div class='pdinfo'>";
 
-            echo "<h2>Product Info:</h2>";
+            echo "<h2>Info e Produktit:</h2>";
             echo "<table class='TABLEE'>";
             echo "<thead >";
             echo "<tr>";
-            echo "<th>Product ID</th>";
+            echo "<th>Id e Produktit</th>";
             echo "<th>Artikulli</th>";
             echo "<th>Emertimi</th>";
             echo "<th>Sasia</th>";
@@ -110,9 +110,9 @@
             while ($row = $productInfoResult->fetch_assoc()) {
               echo "<div class='BODYY'>";
               echo "<tr BODYYy>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["product_id"] . "</td>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["artikulli"] . "</td>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["emertimi"] . "</td>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["product_id"] . "</td>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["artikulli"] . "</td>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["emertimi"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["saisa"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["njesia_matse"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["cmimi"] . "</td>";
